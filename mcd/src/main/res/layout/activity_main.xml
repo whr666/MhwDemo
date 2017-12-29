@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:id="@+id/activity_main"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    tools:context="mhw.ledou.com.mcd.MainActivity"
+    android:background="@mipmap/backg"
+    android:gravity="center"
+    android:fitsSystemWindows="true"
+    >
+
+    <ImageView
+        android:id="@+id/mcdlogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/logoy"
+        />
+<LinearLayout
+    android:layout_below="@+id/mcdlogo"
+    android:id="@+id/line1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/logoedge"
+    android:gravity="center_vertical"
+    android:layout_margin="33dp"
+    >
+  <!--  Vz10OtCrIr1DG2q4	税前价格
+    vEfNUDSbV3vrOwlm	税后价格
+    XLUXHXOf88wsWfI2	税前价格+税后价格-->
+    <EditText
+        android:id="@+id/bianma"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:hint="请输入供应商编码"
+        android:text="XLUXHXOf88wsWfI2"
+        android:textSize="14sp"
+        android:textColor="#666666"
+        android:layout_weight="1"
+        android:paddingLeft="10dp"
+        android:background="@null"
+        android:gravity="center_vertical"
+        />
+    <ImageView
+        android:id="@+id/go_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@mipmap/enter"
+        android:paddingRight="10dp"
+        />
+</LinearLayout>
+
+
+
+</RelativeLayout>

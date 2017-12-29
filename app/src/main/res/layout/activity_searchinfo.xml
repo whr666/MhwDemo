@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_searchinfo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ledou.mhw.activity.SearchinfoActivity">
+
+    <LinearLayout
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:background="@drawable/unilabut"
+        >
+        <ImageView
+            android:id="@+id/backimg"
+            android:layout_width="@dimen/backw"
+            android:layout_height="@dimen/backh"
+            android:padding="@dimen/back"
+            android:src="@mipmap/s_return"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            />
+        <com.ledou.mhw.view.widget.Myeditext
+            android:id="@+id/indexSearch2"
+            android:layout_width="0dp"
+            android:layout_height="27dp"
+            android:background="@drawable/edge"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginBottom="11dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            />
+
+        <ImageView
+            android:id="@+id/scanback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/s_van"
+            android:layout_gravity="center"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/titlecolor"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_below="@+id/line1"
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/unilabut"
+        >
+        <TextView
+            android:id="@+id/Sptype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="分类"
+            android:drawableRight="@mipmap/l_arrowup"
+            android:gravity="center"
+            android:padding="15dp"
+            />
+        <TextView
+            android:id="@+id/Spbrand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="排序"
+            android:drawableRight="@mipmap/l_arrowup"
+            android:gravity="center"
+            android:padding="15dp"
+            />
+        <TextView
+            android:id="@+id/SpPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="品牌"
+            android:drawableRight="@mipmap/l_arrowup"
+            android:gravity="center"
+            android:padding="15dp"
+            android:maxEms="9"
+            android:singleLine="true"
+            android:ellipsize="end"
+            />
+    </LinearLayout>
+
+    <com.wuxiaolong.pullloadmorerecyclerview.PullLoadMoreRecyclerView
+        android:layout_below="@+id/line"
+        android:id="@+id/pullLoadMoreRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp" />
+
+</RelativeLayout>

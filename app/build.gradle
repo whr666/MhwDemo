@@ -1,0 +1,51 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "com.ledou.mhw"
+        minSdkVersion 14
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:multidex:'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    testCompile 'junit:junit:4.12'
+    compile 'com.ashokvarma.android:bottom-navigation-bar:2.0.1'
+    //tabbar
+    compile 'com.readystatesoftware.systembartint:systembartint:1.0.4'
+    //状态栏
+    compile 'com.github.bumptech.glide:glide:4.0.0-RC1'
+    //图片
+    compile 'com.zhy:autolayout:1.4.5'
+    //适配
+    compile 'com.youth.banner:banner:1.4.10'
+    //banner最新版本
+    compile 'com.android.support.test.espresso:espresso-core:2.2.2'
+    compile 'com.wuxiaolong.pullloadmorerecyclerview:library:1.0.4'
+    compile 'com.google.android.gms:play-services-appindexing:8.4.0'
+    compile 'com.squareup.okio:okio:1.13.0'
+    compile 'com.squareup.okhttp3:okhttp:3.9.0'
+    compile 'com.google.code.gson:gson:2.8.1'
+    compile 'com.zhy:okhttputils:2.6.2'
+    compile 'com.abrahamcaijin.commonutil:CommonUtil:1.0.1'
+    compile files('libs/fastjson-1.2.7.jar')
+    compile files('libs/jsoup-1.8.1.jar')
+    compile 'com.zzhoujay.richtext:richtext:2.4.7'//webview
+}

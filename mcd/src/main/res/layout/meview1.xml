@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sbg"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/mylinear"
+        android:layout_width="match_parent"
+        android:layout_height="149dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@mipmap/background"
+        >
+        <ImageView
+            android:id="@+id/headimg"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:scaleType="centerInside"
+            android:src="@mipmap/notlog"
+            />
+
+            <TextView
+                android:id="@+id/logintext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="登录"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:textColor="@color/basebg"
+                android:layout_marginTop="10dp"
+                />
+            <TextView
+                android:id="@+id/dengji"
+                android:layout_width="84dp"
+                android:layout_height="20dp"
+                android:text="等级"
+                android:layout_marginTop="15dp"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:textColor="@color/basebg"
+                android:background="@drawable/meedge"
+                android:visibility="gone"
+                />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:background="@drawable/meedge1"
+        android:padding="1dp"
+        >
+    <TextView
+        android:id="@+id/mydingdan"
+        android:layout_below="@+id/myview"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="我的订单"
+        android:drawableRight="@mipmap/arrowright"
+        android:padding="10dp"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:gravity="center_vertical"
+        android:background="@drawable/unilabut"
+        />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/meRecyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            >
+
+        </android.support.v7.widget.RecyclerView>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/meedge1"
+        android:visibility="gone"
+        >
+        <TextView
+            android:layout_below="@+id/myview"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:text="账户余额"
+            android:padding="10dp"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:visibility="gone"
+            />
+        <TextView
+            android:id="@+id/yuer"
+            android:layout_below="@+id/myview"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="一百万"
+            android:drawableRight="@mipmap/arrowright"
+            android:padding="10dp"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/mebgcolor"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+android:visibility="gone"
+            />
+    </LinearLayout>
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_margin="10dp"
+        android:id="@+id/meRecyclerview2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/meedge1"
+        >
+
+    </android.support.v7.widget.RecyclerView>
+
+
+
+
+
+
+</LinearLayout>

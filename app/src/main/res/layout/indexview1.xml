@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/sbg"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginBottom="@dimen/basebutmg"
+    android:layout_marginTop="@dimen/basetopmg"
+    android:layout_marginLeft="@dimen/baseleftmg"
+    android:layout_marginRight="@dimen/baserigth"
+    android:gravity="center"
+    >
+    <ImageView
+        android:layout_width="@dimen/index1imgw"
+        android:layout_height="@dimen/index1imgh"
+        android:src="@mipmap/fashion"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="@dimen/mg"
+        />
+
+    <ImageView
+        android:layout_width="@dimen/index1imgw"
+        android:layout_height="@dimen/index1imgh"
+        android:src="@mipmap/newproduct"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/mg"
+        />
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/basebutmg"
+        android:layout_marginLeft="@dimen/baseleftmg"
+        android:layout_marginRight="@dimen/baserigth"
+        >
+        <ImageView
+            android:layout_width="@dimen/index1imgw"
+            android:layout_height="@dimen/index1imgh"
+            android:src="@mipmap/full"
+            android:layout_marginRight="@dimen/mg"
+            />
+
+        <ImageView
+            android:layout_width="@dimen/index1imgw"
+            android:layout_height="@dimen/index1imgh"
+            android:layout_marginLeft="@dimen/mg"
+            android:src="@mipmap/motion"
+            />
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="特别推荐"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/hei"
+        android:textSize="@dimen/index1texts"
+        android:paddingBottom="16dp"
+        android:paddingTop="15dp"
+        android:background="@color/basebg"
+        />
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/indeximgh"
+        android:src="@mipmap/specialmap"
+        android:scaleType="fitXY"
+        />
+
+<android.support.v7.widget.RecyclerView
+    android:id="@+id/index1Hrecyclerview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingRight="10dp"
+    android:background="@color/basebg"
+    >
+
+</android.support.v7.widget.RecyclerView>
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="10dp"
+    android:background="@color/sbg"
+    />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="名品箱包"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/hei"
+        android:textSize="@dimen/index1texts"
+        android:paddingBottom="16dp"
+        android:paddingTop="15dp"
+        android:background="@color/basebg"
+        />
+
+    <ImageView
+        android:id="@+id/img2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/indeximgh"
+        android:src="@mipmap/specialmap"
+        android:scaleType="fitXY"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/index1Grecyclerview1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+        android:background="@color/basebg"
+        >
+
+    </android.support.v7.widget.RecyclerView>
+
+
+
+
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/sbg"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="户外运动"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/hei"
+        android:textSize="@dimen/index1texts"
+        android:paddingBottom="16dp"
+        android:paddingTop="15dp"
+        android:background="@color/basebg"
+        android:visibility="gone"
+        />
+
+    <ImageView
+        android:id="@+id/img3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/indeximgh"
+        android:src="@mipmap/specialmap"
+        android:scaleType="centerInside"
+        android:visibility="gone"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/index1Grecyclerview2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+        android:background="@color/basebg"
+        android:visibility="gone"
+        >
+
+    </android.support.v7.widget.RecyclerView>
+
+
+
+
+
+
+
+
+
+
+</com.zhy.autolayout.AutoLinearLayout>

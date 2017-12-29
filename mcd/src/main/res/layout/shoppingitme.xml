@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/basebg"
+    android:orientation="vertical" >
+    
+    
+    <LinearLayout 
+        android:id="@+id/linlayout"
+        android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+     android:padding="10dp"
+        >
+        
+        <LinearLayout 
+             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+        
+        <CheckBox
+            android:id="@+id/shopxuanze"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:drawableLeft="@drawable/cbx"
+            android:button="@null"
+            />
+        
+        <ImageView 
+            android:id="@+id/shopitmeimg"
+             android:layout_width="70dp"
+            android:layout_height="80dp"
+            android:scaleType="centerInside"
+            android:src="@null"
+            android:padding="1dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/edge"
+            />
+        </LinearLayout>
+        
+        
+        
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            >
+            <TextView 
+                android:id="@+id/shopitmename"
+                android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MCM柏拉图式女包"
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:maxEms="12"  
+           android:singleLine="true"  
+           android:ellipsize="end"  
+                />
+            
+            <TextView 
+                android:id="@+id/shopitmeguige"
+                android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="颜色：粉色      尺码：均码"
+            android:textColor="#777777"
+            android:textSize="12sp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+                />
+              <TextView 
+                  android:id="@+id/shopitmejiage"
+                android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥ 126"
+            android:textColor="#f01616"
+            android:textSize="12sp"
+                />
+        </LinearLayout>
+        
+        
+        
+        
+    </LinearLayout>
+    
+    
+         <LinearLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="80dp"
+    android:orientation="vertical"
+    android:layout_alignParentRight="true"
+     android:layout_margin="10dp"
+     android:gravity="center"
+    >  
+        <include 
+        android:id="@+id/shopinclude"
+        layout="@layout/addj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        /> 
+  
+    <LinearLayout 
+        android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+        >
+    <TextView 
+        android:id="@+id/shopx"
+                android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="x"
+            android:textColor="#000000"
+            android:textSize="12sp"
+                />
+               <TextView 
+                   android:id="@+id/shopitmeshuliang"
+                android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textColor="#000000"
+            android:textSize="12sp"
+                />
+             </LinearLayout>
+               
+               
+               
+             </LinearLayout>     
+    
+         
+         <View 
+             android:layout_below="@+id/linlayout"
+             android:layout_width="match_parent"
+            android:layout_height="10dp"
+android:background="@color/line"
+             />
+         
+
+</RelativeLayout>

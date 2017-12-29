@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/basebg"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/titlebut"
+        android:gravity="center"
+        android:text="进货车"
+        android:textSize="@dimen/titlesize"
+        android:paddingTop="@dimen/titletop"
+        android:paddingBottom="@dimen/titlebut"
+        android:textColor="@color/titlecolor"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/infobackimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:paddingRight="10dp"
+        android:paddingTop="@dimen/titletop"
+        android:paddingBottom="@dimen/titlebut"
+        android:text="编辑"
+        android:textColor="@color/shoptext"
+        android:textSize="15sp"
+        />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/framelayout"
+        android:layout_below="@+id/title">
+
+        <ExpandableListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:groupIndicator="@null"
+            android:background="@color/basebg"
+            >
+
+        </ExpandableListView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/basebg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/unilatop"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/shopall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/uncart_select"
+                android:layout_margin="10dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="全选"
+                android:textColor="#000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/shopzongjia"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="right"
+                android:textColor="#000"
+                android:text="应付金额：¥ 0.00"
+                android:textSize="12sp" />
+
+
+            <TextView
+                android:id="@+id/jiesuan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/shopcaredge"
+                android:gravity="center"
+                android:padding="7dp"
+                android:text="去结算"
+                android:textColor="#fff"
+                android:textSize="12sp"
+                />
+
+        </LinearLayout>
+    </FrameLayout>
+
+
+</RelativeLayout>

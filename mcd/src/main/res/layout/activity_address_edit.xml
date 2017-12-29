@@ -1,0 +1,252 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/basebg"
+    >
+
+   <TextView
+            android:id="@+id/classifytitle"
+             android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="添加收货地址"
+         android:gravity="center"
+         android:padding="15dp"
+         android:textSize="16dp"
+         android:textColor="@color/titlecolor"
+         android:textStyle="bold"
+         android:background="@color/titlebgcolor"
+            />
+  
+            <ImageView 
+            android:id="@+id/editbackimg"
+            android:layout_width="@dimen/backw"
+         android:layout_height="@dimen/backh"
+          android:padding="@dimen/back"
+          android:scaleType="centerInside"
+         android:src="@mipmap/arrow"
+         android:layout_alignParentLeft="true"
+            />
+
+            <ScrollView 
+                 android:layout_below="@+id/classifytitle"
+                 android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+                >
+            
+        <LinearLayout 
+           
+              android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+            >
+            <View 
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/line"
+                />
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/unilabut"
+                >
+                <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:padding="15dp"
+                android:text="收货人"
+                android:layout_gravity="center"
+                android:textColor="@color/hei"
+                    />
+                <EditText 
+                    android:id="@+id/mingzi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:hint="请使用真实姓名"
+                    android:textSize="14sp"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    />
+                
+            </LinearLayout>
+            
+              <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/unilabut"
+                >
+                <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:padding="15dp"
+                android:text="手机号码"
+                android:maxEms="11"
+                android:layout_gravity="center"
+                android:textColor="@color/hei"
+                    />
+                <EditText 
+                    android:id="@+id/dianhua"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:hint="电话号码"
+                    android:textSize="14sp"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    />
+                
+            </LinearLayout>
+           
+            
+            
+              <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/unilabut"
+                >
+                <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:padding="15dp"
+                android:text="所在地区"
+                android:layout_gravity="center"
+                android:textColor="@color/hei"
+                    />
+                <TextView 
+                    android:id="@+id/shengshiqu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:hint="如：上海市浦东新区高行镇"
+                    android:textSize="14sp"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    />
+                
+            </LinearLayout>
+            
+            
+                <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/unilabut"
+                >
+                <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:padding="15dp"
+                android:text="详细地址"
+                android:layout_gravity="center"
+                android:textColor="@color/hei"
+                    />
+                <EditText 
+                    android:id="@+id/dizhi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:hint="如：浦东大道66号"
+                    android:textSize="14sp"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    />
+                
+            </LinearLayout>
+              
+                <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/unilabut"
+                >
+                <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:padding="15dp"
+                android:text="身份证号"
+                android:layout_gravity="center"
+                android:textColor="@color/hei"
+                    />
+                <EditText 
+                    android:id="@+id/shenfen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:hint="可不填"
+                    android:textSize="14sp"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    />
+                
+            </LinearLayout>
+              
+                <View 
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="@color/line"
+                    />
+                
+                <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/unilabut"
+                >
+                <TextView 
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:padding="15dp"
+                android:text="设为默认"
+                android:layout_gravity="center"
+                android:textColor="@color/hei"
+                android:layout_weight="1"
+                    />
+                <ImageView 
+                    android:id="@+id/chooseimg"
+                    android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/uncheck"
+                android:layout_gravity="center"
+                android:padding="15dp"
+                    />
+                
+            </LinearLayout>
+                
+                
+                 <TextView 
+                     android:id="@+id/baocun"
+                 android:layout_marginTop="58dp"
+                 android:layout_marginLeft="15dp"
+                 android:layout_marginRight="15dp"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:text="保存"
+                 android:textColor="@color/titlecolor"
+                 android:textSize="14sp"
+                 android:padding="15dp"
+                 android:background="@drawable/edge"
+                 android:gravity="center"
+                 />
+              
+            
+            
+            
+            
+        </LinearLayout>    
+            
+        
+        </ScrollView>
+        
+        
+        
+</RelativeLayout>

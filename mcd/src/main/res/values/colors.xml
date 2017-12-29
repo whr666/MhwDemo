@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="toolbarbg">#F6F6F6</color>
+
+
+    <color name="tabbarbg1">#DC143C</color>
+    <color name="tabbarbg2">#FFA500</color>
+    <color name="tabbarbg3">#FFFF00</color>
+    <color name="tabbarbg4">#008000</color>
+    <color name="tabbartx">#c7a970</color>
+    <color name="untabbartx">#aaaaaa</color>
+
+    <color name="classtext">#333333</color>
+    <color name="basebg">#ffffff</color>
+
+    <color name="sbg">#f2f2f2</color>
+    <color name="searchbg">#777777</color>
+    <color name="viewbg">#f2f2f2</color>
+
+    <color name="hei">#000000</color>
+    <color name="textcolor">#000000</color>
+
+    <color name="indexitemtext">#ff6600</color>
+    <color name="titlecolor">#000000</color>
+    <color name="titlebgcolor">#ffffff</color>
+
+    <color name="goodscolor">#ff6600</color>
+    <color name="goodscolor2">#666666</color>
+    <color name="mebgcolor">#ff6600</color>
+    <color name="allbut">#ff6600</color>
+    <color name="touming2">#a0000000</color>
+
+    <color name="unbut">#e5e5e5</color>
+    <color name="line">#e5e5e5</color>
+    <color name="but">#ff6600</color>
+    <color name="logintext">#333333</color>
+    <color name="shoptext">#333333</color>
+
+
+
+</resources>

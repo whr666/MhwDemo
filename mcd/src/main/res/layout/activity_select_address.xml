@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView 
+            android:id="@+id/classifytitle"
+             android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="选择收货地址"
+         android:gravity="center"
+         android:padding="15dp"
+         android:textSize="16dp"
+         android:textColor="@color/titlecolor"
+         android:textStyle="bold"
+         android:background="@color/titlebgcolor"
+            />
+    
+        <TextView 
+            android:id="@+id/guanli"
+             android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="添加"
+           android:textSize="14dp"
+         android:textColor="@color/basebg"
+         android:layout_alignParentRight="true"
+         android:padding="15dp"
+            />
+  
+            <ImageView 
+            android:id="@+id/backimg"
+              android:layout_width="@dimen/backw"
+         android:layout_height="@dimen/backh"
+          android:padding="@dimen/back"
+         android:src="@mipmap/arrow"
+         android:layout_alignParentLeft="true"
+            />
+            
+            <ListView
+           android:layout_below="@+id/classifytitle"
+            android:id="@+id/selectaddressistview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@color/line"
+            android:dividerHeight="1dp"
+            android:fadingEdge="vertical"
+            android:fastScrollEnabled="false"
+            android:footerDividersEnabled="true"
+            android:headerDividersEnabled="true"
+             android:background="@color/basebg"
+            android:smoothScrollbar="true" 
+            />
+
+</RelativeLayout>

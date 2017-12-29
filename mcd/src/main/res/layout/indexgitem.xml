@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:background="@color/basebg"
+
+    >
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="169dp"
+        android:layout_height="169dp"
+        android:src="@drawable/shoplist"
+        android:scaleType="centerInside"
+        />
+      <TextView
+    android:id="@+id/title"
+    android:layout_width="169dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:text=""
+    android:textSize="12sp"
+    android:textColor="@color/hei"
+          android:enabled="false"
+          android:ellipsize="end"
+          android:maxLines="2"
+    />
+
+    <TextView
+        android:id="@+id/kucun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="库存:0"
+        android:textSize="12sp"
+        android:textColor="#c7a970"
+        android:gravity="center"
+        android:enabled="false"
+        android:ellipsize="end"
+        android:maxLines="1"
+        />
+
+
+
+    <LinearLayout
+        android:layout_width="169dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        >
+        <TextView
+            android:id="@+id/xianjia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥120"
+            android:textSize="14sp"
+            android:textColor="#f20f00"
+            android:gravity="center"
+            android:enabled="false"
+            android:ellipsize="end"
+            android:maxLines="1"
+            />
+        <TextView
+            android:id="@+id/yuanjia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥120"
+            android:textSize="14sp"
+            android:textColor="#f20f00"
+            android:enabled="false"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            />
+    </LinearLayout>
+
+
+
+</LinearLayout>
